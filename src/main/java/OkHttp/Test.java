@@ -19,6 +19,7 @@ public class Test {
             @Override
             public void onError(Exception error) {
                 System.out.println("超时");
+
             }
         });
 
