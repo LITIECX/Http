@@ -4,7 +4,7 @@ public class Test {
 
 
     public static void main(String[] args) throws Exception {
-        IRequest request = new MyRequest("http://localhost:8080/add");//http://47.100.13.155:8080/TimeTable/userLogin
+        IRequest request = new MyRequest("http://localhost:8080/add"); //http://47.100.13.155:8080/TimeTable/userLogin
 //        http://localhost:8080/userLogin
 //        request.setHeader("", "");
         request.setBody("userId", "1640402200836");
@@ -15,13 +15,14 @@ public class Test {
             public void onResult(MyResponse result) {
                 System.out.println(result.getData());
             }
-
             @Override
             public void onError(Exception error) {
                 System.out.println("超时");
 
             }
         });
+
+        //这是代码的第三次测试提交
 
     }
 }
